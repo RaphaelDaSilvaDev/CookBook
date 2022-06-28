@@ -1,6 +1,9 @@
+import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
 import { MostViewed } from "../components/MostViewed";
 import { NavigarionItens } from "../components/NavigationItens";
+import { RecipesOfTheWeek } from "../components/RecipesOfTheWeek";
+import { TopUsers } from "../components/TopUsers";
 
 export function Home() {
     return (
@@ -17,8 +20,14 @@ export function Home() {
                         <MostViewed />
                     </div>
 
+                    <div className="flex pt-9">
+                        <RecipesOfTheWeek />
+                        <TopUsers />
+                    </div>
+
                 </div>
             </div>
+            <Footer />
         </div>
     )
 }

@@ -1,4 +1,4 @@
-import { MainCard } from "./Icons/MainCard";
+import { MainCard } from "./MainCard";
 
 export function MostViewed() {
     return (
@@ -7,10 +7,6 @@ export function MostViewed() {
                 Receitas mais vistas
             </strong>
             <div className="flex flex-wrap gap-6">
-                <MainCard />
-                <MainCard />
-                <MainCard />
-                <MainCard />
                 <MainCard />
                 <MainCard />
                 <MainCard />

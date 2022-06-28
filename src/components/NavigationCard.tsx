@@ -7,7 +7,7 @@ interface INavigationCardsProps {
     name: string
 }
 
-export function MostViewedCard(props: INavigationCardsProps) {
+export function NavigationCard(props: INavigationCardsProps) {
 
     let image
     if (props.name === 'Pães') {

@@ -1,14 +1,14 @@
-import { MostViewedCard } from "./MostViewedCard";
+import { NavigationCard } from "./NavigationCard";
 
 export function NavigarionItens() {
 
 
     return (
         <>
-            <MostViewedCard name="Pães" />
-            <MostViewedCard name="Biscoitos" />
-            <MostViewedCard name="Sopas" />
-            <MostViewedCard name="Pizza" />
+            <NavigationCard name="Pães" />
+            <NavigationCard name="Biscoitos" />
+            <NavigationCard name="Sopas" />
+            <NavigationCard name="Pizza" />
         </>
     )
 }

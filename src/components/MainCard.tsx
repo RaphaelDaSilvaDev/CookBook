@@ -1,5 +1,5 @@
 import { Heart } from 'phosphor-react'
-import donutsImage from '../images/donuts.png'
+import donutsImage from './images/donuts.png'
 
 export function MainCard() {
     return (
