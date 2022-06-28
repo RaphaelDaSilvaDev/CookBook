@@ -1,3 +1,6 @@
+import classNames from 'classnames'
+
+import { Link } from "react-router-dom"
 import { Bread } from "./Icons/Bread"
 import { Cook } from "./Icons/Cook"
 import { Noodles } from "./Icons/Noodles"
@@ -10,8 +13,10 @@ interface INavigationCardsProps {
 export function NavigationCard(props: INavigationCardsProps) {
 
     let image
+    let bread = false
     if (props.name === 'Pães') {
-        image = <Bread />
+        bread = true;
+        bread ? image = <Bread color='#e0e0e0' /> : image = <Bread />
     } else if (props.name === 'Biscoitos') {
         image = <Cook />
     } else if (props.name === 'Sopas') {
@@ -20,10 +25,14 @@ export function NavigationCard(props: INavigationCardsProps) {
         image = <Pizza />
     }
 
+
     return (
-        <div className="w-[136px] h-[136px] flex flex-col items-center justify-center gap-2 drop-shadow-app bg-gray-100 rounded-lg">
+        <Link to="#" className={classNames('w-[136px] h-[100px] flex flex-col items-center justify-center gap-2 border-l border-gray-300 hover:bg-red-100', {
+            'bg-red-500': bread,
+            'text-gray-200': bread,
+        })}>
             {image}
             <span>{props.name}</span>
-        </div>
+        </Link>
     )
 }

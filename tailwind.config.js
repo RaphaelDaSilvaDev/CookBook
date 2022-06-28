@@ -9,10 +9,11 @@ module.exports = {
         sans: 'Oxygen, sans-serif'
       },
       dropShadow: {
-        'app': '4px 4px 4px rgba(0, 0, 0, 0.25)'
+        'app': '4px 8px 4px rgba(0, 0, 0, 0.25)'
       },
       colors: {
         red: {
+          100: '#FF8785',
           500: '#CC0300'
         },
         gray: {

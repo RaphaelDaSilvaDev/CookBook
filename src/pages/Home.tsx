@@ -9,12 +9,11 @@ export function Home() {
     return (
         <div>
             <Header />
-            <div className="flex flex-col items-center justify-center pt-16">
+            <div className="flex w-full bg-gray-100 top-16 items-center justify-center drop-shadow-app fixed z-[10]">
+                <NavigarionItens />
+            </div>
+            <div className="flex flex-col items-center justify-center pt-8">
                 <div className="w-full max-w-[936px] flex flex-col items-start justify-center py-2">
-
-                    <div className="flex w-full top-16 pt-4 bg-gray-200 items-start fixed z-[9] gap-6">
-                        <NavigarionItens />
-                    </div>
 
                     <div className="flex flex-col pt-32">
                         <MostViewed />

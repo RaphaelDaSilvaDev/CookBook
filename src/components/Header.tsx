@@ -3,7 +3,7 @@ import { Logo } from "./Logo";
 
 export function Header() {
     return (
-        <div className="w-full h-16 fixed z-10 bg-red-500 flex items-center justify-center drop-shadow-app">
+        <div className="w-full h-16 fixed z-10 bg-red-500 flex items-center justify-center">
             <div className="w-full max-w-[936px] flex justify-between items-center py-2">
                 <Logo />
 
