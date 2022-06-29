@@ -7,7 +7,7 @@ export function RecipesOfTheWeek() {
                 Receitas da semana
             </strong>
 
-            <div className="flex flex-wrap gap-6">
+            <div className="max-w-2xl flex flex-wrap gap-6">
                 <RecipesOfTheWeekCard />
                 <RecipesOfTheWeekCard />
                 <RecipesOfTheWeekCard />

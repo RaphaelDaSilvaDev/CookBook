@@ -1,8 +1,9 @@
+import { Link } from 'react-router-dom'
 import donutsImage from './images/donuts.png'
 
 export function TopUsersCard() {
     return (
-        <div className='flex w-[264px] h-[88px] gap-2 px-2 border-b border-gray-300'>
+        <Link to="#" className='flex w-[296px] gap-2 py-2 px-2 border-b border-gray-300 hover:bg-gray-200'>
             <img src={donutsImage} className='w-[72px] h-[72px] rounded-full' alt="" />
             <div className='flex flex-col items-center justify-between'>
                 <span className='text-xl'>Raphael da Silva</span>
@@ -21,6 +22,6 @@ export function TopUsersCard() {
                     </span>
                 </p>
             </div>
-        </div>
+        </Link>
     )
 }

@@ -5,7 +5,7 @@ import donutsImage from './images/donuts.png'
 
 export function MainCard() {
     return (
-        <Link to="#" className='flex bg-gray-100 w-[456px] rounded-lg drop-shadow-app hover:scale-105 transition group'>
+        <Link to={`/user/Donuts`} className='flex bg-gray-100 w-[456px] rounded-lg drop-shadow-app hover:scale-105 transition group'>
             <img src={donutsImage} alt="" />
             <div className='info-name w-full flex flex-col items-center gap-6 p-2 group-hover:hidden'>
                 <Link to="#" className="self-end"> <Heart size={32} weight="light" /></Link>
@@ -18,7 +18,7 @@ export function MainCard() {
             <div className='w-full hidden flex-col items-center gap-4 p-2 group-hover:flex'>
                 <Link to="#" className="self-end"> <Heart size={32} weight="light" /></Link>
                 <div className="flex gap-2 justify-center items-center">
-                    <div className='flex flex-col gap-2 justify-center'>
+                    <div className='flex flex-col gap-2 items-center justify-center'>
                         <Timer size={32} />
                         <span className='text-gray-300'>30 minutos</span>
                     </div>
@@ -27,9 +27,9 @@ export function MainCard() {
                         <span className='text-gray-300'>8 Ingredientes</span>
                     </div>
                 </div>
-                <Link to="#" className='bg-red-500 text-gray-100 py-2 px-4 rounded-lg'>
+                <p className='bg-red-500 text-gray-100 py-2 px-4 rounded-lg'>
                     Ver Receita
-                </Link>
+                </p>
             </div>
         </Link>
     )
