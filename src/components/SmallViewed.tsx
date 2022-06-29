@@ -1,12 +1,8 @@
-import { RecipesOfTheWeekCard } from "./RecipesOfTheWeekCard";
+import { RecipesOfTheWeekCard } from "./SmallViewedCard";
 
 export function RecipesOfTheWeek() {
     return (
         <div className="flex flex-col gap-6">
-            <strong className="text-2xl text-red-500 uppercase">
-                Receitas da semana
-            </strong>
-
             <div className="max-w-2xl flex flex-wrap gap-6">
                 <RecipesOfTheWeekCard />
                 <RecipesOfTheWeekCard />

@@ -1,8 +1,8 @@
 import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
-import { MostViewed } from "../components/MostViewed";
+import { MostViewed } from "../components/MainViewed";
 import { NavigarionItens } from "../components/NavigationItens";
-import { RecipesOfTheWeek } from "../components/RecipesOfTheWeek";
+import { RecipesOfTheWeek } from "../components/SmallViewed";
 import { TopUsers } from "../components/TopUsers";
 
 export function Home() {
@@ -16,12 +16,20 @@ export function Home() {
                 <div className="w-full max-w-[936px] flex flex-col items-start justify-center py-2">
 
                     <div className="flex flex-col pt-32">
+                        <strong className="text-2xl pt-9 text-red-500 uppercase">
+                            Receitas mais vistas
+                        </strong>
                         <MostViewed />
                     </div>
 
-                    <div className="flex pt-9">
-                        <RecipesOfTheWeek />
-                        <TopUsers />
+                    <div className="flex flex-col pt-9">
+                        <strong className="text-2xl text-red-500 uppercase">
+                            Receitas da semana
+                        </strong>
+                        <div className='flex pt-4'>
+                            <RecipesOfTheWeek />
+                            <TopUsers />
+                        </div>
                     </div>
 
                 </div>

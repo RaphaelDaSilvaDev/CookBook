@@ -1,9 +1,17 @@
+import { useParams } from "react-router-dom";
 import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
-import { MostViewed } from "../components/MostViewed";
+import { MostViewed } from "../components/MainViewed";
 import { NavigarionItens } from "../components/NavigationItens";
 
-export function Category() {
+interface ICategoriesProps {
+    name: string
+}
+
+export function Category(props: ICategoriesProps) {
+
+    const { category } = useParams()
+
     return (
         <div>
             <Header />
@@ -16,6 +24,9 @@ export function Category() {
                 <div className="w-full max-w-[936px] flex flex-col items-start justify-center py-2">
 
                     <div className="flex flex-col pt-32">
+                        <strong className="text-2xl pt-9 text-red-500 uppercase">
+                            {category}
+                        </strong>
                         <MostViewed />
                     </div>
 
